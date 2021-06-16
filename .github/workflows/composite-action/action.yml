@@ -1,0 +1,11 @@
+name: "Before script for python related jobs"
+description: "Setup python environment"
+runs:
+  using: "composite"
+  steps: 
+  - run: |
+          pip install -r requirements.txt
+          if [ -f "./test-requirements.txt" ]; then
+            pip install -r test-requirements.txt
+          fi
+    shell: bash

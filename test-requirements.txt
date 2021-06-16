@@ -1,0 +1,4 @@
+# Specifies the requirements used for testing
+
+pytest
+pytest-mock
